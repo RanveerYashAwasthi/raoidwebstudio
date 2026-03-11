@@ -883,6 +883,20 @@ ul { list-style: none; }
 }
 .pricing-note a:hover { text-decoration: underline; }
 
+.demo-link {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: var(--transition);
+}
+.demo-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 /* ===== HOW IT WORKS ===== */
 .how-it-works {
     background: var(--bg-subtle);
