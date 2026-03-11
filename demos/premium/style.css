@@ -553,7 +553,7 @@ html { scrollbar-width: thin; scrollbar-color: var(--accent) var(--bg-cream); }
     border-radius: var(--radius-lg);
     transition: var(--transition);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 .testimonial-card::after {
     content: '\201C';
