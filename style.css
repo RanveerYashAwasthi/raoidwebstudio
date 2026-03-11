@@ -244,15 +244,19 @@ ul { list-style: none; }
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 8px;
 }
 
 .nav-links a {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 500;
     color: var(--text-secondary);
+    white-space: nowrap;
+    padding: 6px 10px;
 }
 .nav-links a:hover { color: var(--primary); }
+.nav-links a.btn-nav { color: white; }
+.nav-links a.btn-nav:hover { color: white; }
 
 .nav-toggle {
     display: none;
@@ -744,10 +748,11 @@ ul { list-style: none; }
     border-radius: var(--radius-lg);
     padding: 40px 32px;
     box-shadow: var(--shadow);
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     transition: var(--transition);
+    clip-path: inset(0 0 0 0 round var(--radius-lg));
 }
 
 .pricing-card:hover {
@@ -769,16 +774,36 @@ ul { list-style: none; }
 
 .pricing-badge {
     position: absolute;
-    top: 20px;
-    right: -30px;
+    top: 0;
+    right: -10px;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.pricing-badge::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 28px;
+    right: -32px;
+    width: 170px;
+    padding: 8px 0;
     background: var(--gradient);
     color: white;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 700;
-    padding: 6px 40px;
-    transform: rotate(45deg);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    line-height: 1;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.pricing-badge.badge-value::after {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
 }
 
 .pricing-header {
