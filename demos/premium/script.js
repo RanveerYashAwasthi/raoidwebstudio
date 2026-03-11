@@ -111,4 +111,52 @@
             }
         });
     });
+
+    // ── Scroll Progress Bar ──
+    const progressBar = document.getElementById('scrollProgress');
+    if (progressBar) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = (scrollTop / docHeight) * 100 + '%';
+        }, { passive: true });
+    }
+
+    // ── Staggered Reveals ──
+    function staggerReveal(selector, delay) {
+        const items = document.querySelectorAll(selector);
+        if (!items.length) return;
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const idx = Array.from(entry.target.parentElement.children).indexOf(entry.target);
+                    entry.target.style.transitionDelay = (idx * delay) + 's';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) scale(1)';
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08 });
+        items.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(24px) scale(0.97)';
+            item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            obs.observe(item);
+        });
+    }
+    staggerReveal('.gallery-item', 0.1);
+    staggerReveal('.insta-item', 0.08);
+
+    // ── Navbar active link highlight ──
+    const sections = document.querySelectorAll('section[id]');
+    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(s => {
+            if (window.scrollY >= s.offsetTop - 200) current = s.id;
+        });
+        navAnchors.forEach(a => {
+            a.classList.toggle('nav-active', a.getAttribute('href') === '#' + current);
+        });
+    }, { passive: true });
 })();
