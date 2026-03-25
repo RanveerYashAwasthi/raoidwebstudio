@@ -1,506 +1,387 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RapidWebStudio – Professional Websites for Local Businesses</title>
-    <meta name="description" content="Get a modern, mobile-optimized landing page for your business within 24 hours. Starting at ₹6,000. RapidWebStudio builds high-converting websites for clinics, restaurants, salons, gyms and more.">
-    <meta name="keywords" content="landing page, web design, website for small business, affordable website, RapidWebStudio">
+    <title>RapidWebStudio — Professional Websites for Local Businesses</title>
+    <meta name="description" content="Get a professional, mobile-optimized website for your local business in just 24 hours. One-time Rs.6,000 payment. No subscriptions, no hidden fees.">
     <link rel="canonical" href="https://rapidwebstudio.directdealkart.store">
-    <meta property="og:title" content="RapidWebStudio – Professional Websites for Local Businesses">
-    <meta property="og:description" content="Launch a modern, mobile-optimized landing page for your business within 24 hours. Starting at ₹6,000.">
-    <meta property="og:url" content="https://rapidwebstudio.directdealkart.store">
-    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- ========== NAVBAR ========== -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <span class="logo-icon">⚡</span> RapidWeb<span class="logo-accent">Studio</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#" class="navbar__logo">&#9889; RapidWeb<strong>Studio</strong></a>
+            <nav class="navbar__nav" id="navMenu" aria-label="Main navigation">
+                <ul class="navbar__list">
+                    <li><a href="#benefits" class="navbar__link">Benefits</a></li>
+                    <li><a href="#included" class="navbar__link">What's Included</a></li>
+                    <li><a href="#pricing" class="navbar__link">Pricing</a></li>
+                    <li><a href="#process" class="navbar__link">Process</a></li>
+                    <li><a href="#contact" class="navbar__link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn--primary navbar__cta">Get Started</a>
+            <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#included">What's Included</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#pricing" class="btn btn-nav">Get Started</a></li>
-            </ul>
         </div>
-    </nav>
+    </header>
 
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="container hero-container">
-            <div class="hero-content" data-animate="fade-up">
-                <span class="hero-badge">🚀 Websites Delivered in 24 Hours</span>
-                <h1 class="hero-title">Professional Websites<br>for <span class="gradient-text">Local Businesses</span></h1>
-                <p class="hero-subtitle">Launch a modern, mobile-optimized landing page for your business within 24 hours. Perfect for clinics, restaurants, salons, gyms &amp; more.</p>
-                <div class="hero-buttons">
-                    <a href="#pricing" class="btn btn-primary btn-lg">
-                        Get My Website
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </a>
-                    <a href="#included" class="btn btn-outline btn-lg">View Demo</a>
-                </div>
-                <div class="hero-trust">
-                    <div class="trust-avatars">
-                        <div class="avatar" style="background: #6366f1;">A</div>
-                        <div class="avatar" style="background: #8b5cf6;">R</div>
-                        <div class="avatar" style="background: #a855f7;">S</div>
-                        <div class="avatar" style="background: #7c3aed;">M</div>
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <span class="hero__badge">Websites Delivered in 24 Hours</span>
+                    <h1 class="hero__title">Professional Websites<br> for <em>Local Businesses</em></h1>
+                    <p class="hero__text">We build mobile-optimized, lead-focused landing pages for clinics, restaurants, salons, and gyms across India. One flat fee, delivered tomorrow.</p>
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn--accent">Get My Website</a>
+                        <a href="demos/premium/" class="btn btn--outline" target="_blank" rel="noopener">View Demo</a>
                     </div>
-                    <p>Trusted by <strong>50+</strong> local businesses</p>
-                </div>
-            </div>
-            <div class="hero-visual" data-animate="fade-up" data-delay="200">
-                <div class="hero-illustration">
-                    <div class="device-laptop">
-                        <div class="laptop-screen">
-                            <div class="screen-header">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                            </div>
-                            <div class="screen-content">
-                                <div class="mock-nav"></div>
-                                <div class="mock-hero">
-                                    <div class="mock-text-lg"></div>
-                                    <div class="mock-text-sm"></div>
-                                    <div class="mock-btn"></div>
-                                </div>
-                                <div class="mock-cards">
-                                    <div class="mock-card"></div>
-                                    <div class="mock-card"></div>
-                                    <div class="mock-card"></div>
-                                </div>
-                            </div>
+                    <div class="hero__trust">
+                        <div class="hero__avatars">
+                            <span class="hero__avatar">AK</span>
+                            <span class="hero__avatar">PR</span>
+                            <span class="hero__avatar">SM</span>
+                            <span class="hero__avatar">VG</span>
                         </div>
-                        <div class="laptop-base"></div>
+                        <span class="hero__trust-text">Trusted by <strong>50+ local businesses</strong></span>
                     </div>
-                    <div class="device-phone">
-                        <div class="phone-screen">
-                            <div class="phone-content">
-                                <div class="mock-nav-sm"></div>
-                                <div class="mock-text-lg"></div>
-                                <div class="mock-text-sm"></div>
-                                <div class="mock-btn-sm"></div>
+                </div>
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="mockup">
+                        <div class="mockup__laptop">
+                            <div class="mockup__screen">
+                                <div class="mockup__bar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup__content">
+                                    <div class="mockup__nav-line"></div>
+                                    <div class="mockup__hero-block"></div>
+                                    <div class="mockup__text-line mockup__text-line--wide"></div>
+                                    <div class="mockup__text-line mockup__text-line--medium"></div>
+                                    <div class="mockup__cards">
+                                        <div class="mockup__card"></div>
+                                        <div class="mockup__card"></div>
+                                        <div class="mockup__card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mockup__base"></div>
+                        </div>
+                        <div class="mockup__phone">
+                            <div class="mockup__phone-screen">
+                                <div class="mockup__phone-header"></div>
+                                <div class="mockup__phone-block"></div>
+                                <div class="mockup__text-line mockup__text-line--wide"></div>
+                                <div class="mockup__text-line mockup__text-line--short"></div>
+                                <div class="mockup__phone-btn"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="float-badge badge-1">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                        Mobile Ready
-                    </div>
-                    <div class="float-badge badge-2">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        24hr Delivery
-                    </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <path d="M0 120L60 105C120 90 240 60 360 52.5C480 45 600 60 720 67.5C840 75 960 75 1080 67.5C1200 60 1320 45 1380 37.5L1440 30V120H0Z" fill="white"/>
-            </svg>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== BENEFITS SECTION ========== -->
-    <section class="benefits section" id="benefits">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Why Us</span>
-                <h2 class="section-title">Why Choose <span class="gradient-text">RapidWebStudio</span></h2>
-                <p class="section-subtitle">We make it simple, fast, and affordable to get your business online with a professional website.</p>
+        <!-- ========== BENEFITS ========== -->
+        <section class="benefits section section--alt" id="benefits">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__accent-line"></span>
+                    <h2 class="section__title">Why Choose <em>RapidWebStudio</em></h2>
+                </div>
+                <div class="benefits__grid">
+                    <div class="benefits__item benefits__item--featured reveal" style="--i:0">
+                        <div class="benefits__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="benefits__heading">24-Hour Delivery</h3>
+                            <p class="benefits__desc">Share your details today and your website is live by tomorrow. No week-long timelines, no delays. We understand that every day without a website is lost business.</p>
+                        </div>
+                    </div>
+                    <div class="benefits__item reveal" style="--i:1">
+                        <div class="benefits__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="benefits__heading">Mobile Optimized</h3>
+                            <p class="benefits__desc">85% of your customers browse on phones. Every site we build looks and works flawlessly on mobile devices.</p>
+                        </div>
+                    </div>
+                    <div class="benefits__item reveal" style="--i:2">
+                        <div class="benefits__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="benefits__heading">Lead-Focused Design</h3>
+                            <p class="benefits__desc">Built to convert visitors into customers with clear CTAs, contact forms, and WhatsApp integration.</p>
+                        </div>
+                    </div>
+                    <div class="benefits__item reveal" style="--i:3">
+                        <div class="benefits__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="benefits__heading">Just Rs.6,000 One-Time</h3>
+                            <p class="benefits__desc">No monthly fees, no hidden charges. A single payment for a complete professional website.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="benefits-grid">
-                <div class="benefit-card" data-animate="fade-up" data-delay="0">
-                    <div class="benefit-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    </div>
-                    <h3>Fast Delivery</h3>
-                    <p>Websites delivered within 24 hours. No long waiting periods — get online fast.</p>
-                </div>
-                <div class="benefit-card" data-animate="fade-up" data-delay="100">
-                    <div class="benefit-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-                    </div>
-                    <h3>Mobile Optimized</h3>
-                    <p>Perfect display on phones, tablets, and desktops. Your site looks great everywhere.</p>
-                </div>
-                <div class="benefit-card" data-animate="fade-up" data-delay="200">
-                    <div class="benefit-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    </div>
-                    <h3>Lead Focused Design</h3>
-                    <p>Landing pages designed to convert visitors into paying customers for your business.</p>
-                </div>
-                <div class="benefit-card" data-animate="fade-up" data-delay="300">
-                    <div class="benefit-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    </div>
-                    <h3>Affordable</h3>
-                    <p>Professional websites without expensive agency costs. Great value at just ₹6,000.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== WHAT'S INCLUDED ========== -->
-    <section class="included section" id="included">
-        <div class="container">
-            <div class="included-wrapper">
-                <div class="included-content" data-animate="fade-up">
-                    <span class="section-tag">Features</span>
-                    <h2 class="section-title">What's <span class="gradient-text">Included</span></h2>
-                    <p class="section-subtitle">Everything you need to establish a strong online presence for your business.</p>
-                    <ul class="included-list">
-                        <li data-animate="fade-up" data-delay="0">
-                            <div class="check-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            </div>
-                            <div>
-                                <strong>Custom Landing Page Design</strong>
-                                <span>Unique design tailored to your business and brand identity</span>
-                            </div>
+        <!-- ========== WHAT'S INCLUDED ========== -->
+        <section class="included section" id="included">
+            <div class="container included__inner">
+                <div class="included__content">
+                    <span class="section__accent-line"></span>
+                    <h2 class="section__title">Everything You Get</h2>
+                    <p class="included__lead">A complete website package — design, development, and deployment — all handled for you.</p>
+                    <ul class="included__checklist">
+                        <li class="included__check-item reveal" style="--i:0">
+                            <svg class="included__check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#059669" opacity="0.12"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Custom Design Tailored to Your Business</span>
                         </li>
-                        <li data-animate="fade-up" data-delay="50">
-                            <div class="check-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            </div>
-                            <div>
-                                <strong>Mobile Responsive Layout</strong>
-                                <span>Looks perfect on every screen size and device</span>
-                            </div>
+                        <li class="included__check-item reveal" style="--i:1">
+                            <svg class="included__check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#059669" opacity="0.12"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Fully Mobile Responsive Layout</span>
                         </li>
-                        <li data-animate="fade-up" data-delay="100">
-                            <div class="check-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            </div>
-                            <div>
-                                <strong>Contact Form</strong>
-                                <span>Capture leads directly from your website visitors</span>
-                            </div>
+                        <li class="included__check-item reveal" style="--i:2">
+                            <svg class="included__check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#059669" opacity="0.12"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Contact Form with WhatsApp Integration</span>
                         </li>
-                        <li data-animate="fade-up" data-delay="150">
-                            <div class="check-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            </div>
-                            <div>
-                                <strong>WhatsApp Button</strong>
-                                <span>Let customers reach you instantly via WhatsApp</span>
-                            </div>
+                        <li class="included__check-item reveal" style="--i:3">
+                            <svg class="included__check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#059669" opacity="0.12"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Click-to-Call WhatsApp Button</span>
                         </li>
-                        <li data-animate="fade-up" data-delay="200">
-                            <div class="check-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            </div>
-                            <div>
-                                <strong>Hosting Deployment</strong>
-                                <span>Your site goes live — no technical knowledge needed</span>
-                            </div>
+                        <li class="included__check-item reveal" style="--i:4">
+                            <svg class="included__check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#059669" opacity="0.12"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Deployment &amp; Launch Assistance</span>
                         </li>
-                        <li data-animate="fade-up" data-delay="250">
-                            <div class="check-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            </div>
-                            <div>
-                                <strong>Basic SEO Setup</strong>
-                                <span>Help your business get found on Google search</span>
-                            </div>
+                        <li class="included__check-item reveal" style="--i:5">
+                            <svg class="included__check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#059669" opacity="0.12"/><path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Basic SEO Setup &amp; Google-Ready</span>
                         </li>
                     </ul>
                 </div>
-                <div class="included-visual" data-animate="fade-up" data-delay="200">
-                    <div class="included-image">
-                        <div class="feature-showcase">
-                            <div class="showcase-item">
-                                <div class="showcase-icon" style="background: linear-gradient(135deg,#6366f1,#8b5cf6);">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                                </div>
-                                <span>Responsive Design</span>
-                            </div>
-                            <div class="showcase-item">
-                                <div class="showcase-icon" style="background: linear-gradient(135deg,#10b981,#059669);">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                                </div>
-                                <span>WhatsApp Chat</span>
-                            </div>
-                            <div class="showcase-item">
-                                <div class="showcase-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706);">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                                </div>
-                                <span>SEO Optimized</span>
-                            </div>
-                            <div class="showcase-item">
-                                <div class="showcase-icon" style="background: linear-gradient(135deg,#ef4444,#dc2626);">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                </div>
-                                <span>Contact Form</span>
-                            </div>
-                            <div class="showcase-item">
-                                <div class="showcase-icon" style="background: linear-gradient(135deg,#6366f1,#a855f7);">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                                </div>
-                                <span>Fast Loading</span>
-                            </div>
-                            <div class="showcase-item">
-                                <div class="showcase-icon" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed);">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                                </div>
-                                <span>Hosting Setup</span>
-                            </div>
+                <div class="included__features">
+                    <div class="included__feature-grid">
+                        <div class="included__feature-cell reveal" style="--i:0">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                            <span>Custom Layout</span>
+                        </div>
+                        <div class="included__feature-cell reveal" style="--i:1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>SSL Secured</span>
+                        </div>
+                        <div class="included__feature-cell reveal" style="--i:2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <span>Fast Loading</span>
+                        </div>
+                        <div class="included__feature-cell reveal" style="--i:3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                            <span>SEO Ready</span>
+                        </div>
+                        <div class="included__feature-cell reveal" style="--i:4">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            <span>WhatsApp CTA</span>
+                        </div>
+                        <div class="included__feature-cell reveal" style="--i:5">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            <span>Analytics Ready</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== PRICING SECTION ========== -->
-    <section class="pricing section" id="pricing">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Pricing</span>
-                <h2 class="section-title">Simple, <span class="gradient-text">Transparent Pricing</span></h2>
-                <p class="section-subtitle">No hidden fees. No surprise charges. Just one clear price for everything you need.</p>
-            </div>
-            <div class="pricing-grid pricing-single">
-                <!-- PREMIUM ₹6,000 -->
-                <div class="pricing-card popular" data-animate="fade-up">
-                    <div class="pricing-header">
-                        <span class="pricing-label">Everything You Need</span>
-                        <h3>Professional Website</h3>
-                        <div class="pricing-amount">
-                            <span class="currency">₹</span>
-                            <span class="price">6,000</span>
-                        </div>
-                        <p class="pricing-period">One-time payment · Delivered in 24 hours</p>
+        <!-- ========== PRICING ========== -->
+        <section class="pricing section section--alt" id="pricing">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__accent-line"></span>
+                    <h2 class="section__title">Simple, Transparent Pricing</h2>
+                </div>
+                <div class="pricing__card reveal" style="--i:0">
+                    <p class="pricing__label">Complete Website Package</p>
+                    <div class="pricing__amount">
+                        <span class="pricing__currency">&#8377;</span>
+                        <span class="pricing__number">6,000</span>
+                        <span class="pricing__term">one-time</span>
                     </div>
-                    <ul class="pricing-features">
+                    <p class="pricing__note">One-time fee for design &amp; development. Domain &amp; hosting billed separately.</p>
+                    <ul class="pricing__features">
                         <li>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            Premium landing page design
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Custom design for your business
                         </li>
                         <li>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            Mobile responsive design
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Mobile responsive &amp; fast
                         </li>
                         <li>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            Contact form integration
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Contact form &amp; WhatsApp
                         </li>
                         <li>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            WhatsApp integration
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Deployment assistance included
                         </li>
                         <li>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            Hosting setup included
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            SEO basics configured
                         </li>
                         <li>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            Advanced SEO setup
-                        </li>
-                        <li>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            Custom scroll animations
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l2.5 2.5 5.5-5.5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Delivered in 24 hours
                         </li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary btn-lg btn-full">
-                        Get My Website
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </a>
-                    <a href="demos/premium/" class="demo-link" target="_blank">👁️ See a Live Demo →</a>
+                    <div class="pricing__actions">
+                        <a href="#contact" class="btn btn--accent btn--lg">Get My Website</a>
+                        <a href="demos/premium/" class="pricing__demo-link" target="_blank" rel="noopener">See a Live Demo &#8594;</a>
+                    </div>
                 </div>
             </div>
-            <p class="pricing-note" data-animate="fade-up" data-delay="300">💬 Have questions? <a href="https://wa.me/918668582490" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== HOW IT WORKS ========== -->
-    <section class="how-it-works section" id="how-it-works">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Process</span>
-                <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
-                <p class="section-subtitle">From your idea to a live website in four simple steps.</p>
-            </div>
-            <div class="steps-grid">
-                <div class="step-card" data-animate="fade-up" data-delay="0">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                    </div>
-                    <h3>Send Your Details</h3>
-                    <p>Share your business name, services, and any content you want on your website.</p>
+        <!-- ========== HOW IT WORKS ========== -->
+        <section class="process section" id="process">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__accent-line"></span>
+                    <h2 class="section__title">How It Works</h2>
                 </div>
-                <div class="step-card" data-animate="fade-up" data-delay="100">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                <div class="process__timeline">
+                    <div class="process__step reveal" style="--i:0">
+                        <div class="process__number">1</div>
+                        <div class="process__connector" aria-hidden="true"></div>
+                        <h3 class="process__label">Send Your Details</h3>
+                        <p class="process__desc">Share your business name, services, photos, and contact info via our form or WhatsApp.</p>
                     </div>
-                    <h3>Design is Created</h3>
-                    <p>We design a professional, conversion-focused landing page for your business.</p>
-                </div>
-                <div class="step-card" data-animate="fade-up" data-delay="200">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <div class="process__step reveal" style="--i:1">
+                        <div class="process__number">2</div>
+                        <div class="process__connector" aria-hidden="true"></div>
+                        <h3 class="process__label">Design Created</h3>
+                        <p class="process__desc">We craft a professional, custom landing page tailored to your business and audience.</p>
                     </div>
-                    <h3>You Review</h3>
-                    <p>Review the design preview and request any changes you'd like.</p>
-                </div>
-                <div class="step-card" data-animate="fade-up" data-delay="300">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <div class="process__step reveal" style="--i:2">
+                        <div class="process__number">3</div>
+                        <div class="process__connector" aria-hidden="true"></div>
+                        <h3 class="process__label">You Review</h3>
+                        <p class="process__desc">Preview your site, share feedback, and we'll make revisions until you're satisfied.</p>
                     </div>
-                    <h3>Website Goes Live</h3>
-                    <p>Your website is deployed and live for the world to see. Start getting customers!</p>
+                    <div class="process__step reveal" style="--i:3">
+                        <div class="process__number">4</div>
+                        <h3 class="process__label">Goes Live</h3>
+                        <p class="process__desc">We deploy your website and your business is online — all within 24 hours. Domain &amp; hosting fees are separate.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== FINAL CTA ========== -->
-    <section class="final-cta section" id="final-cta">
-        <div class="container">
-            <div class="cta-card" data-animate="fade-up">
-                <div class="cta-bg-shapes">
-                    <div class="cta-shape cta-shape-1"></div>
-                    <div class="cta-shape cta-shape-2"></div>
-                </div>
-                <h2>Launch Your Business<br>Website <span class="gradient-text-light">Today</span></h2>
-                <p>Stop losing customers because your business doesn't have a modern website. Get a professional landing page that works around the clock to bring you new leads.</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-white btn-lg">
-                        Get My Website
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </a>
-                    <a href="https://wa.me/918668582490" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        Contact on WhatsApp
-                    </a>
+        <!-- ========== CTA BANNER ========== -->
+        <section class="cta-banner">
+            <div class="container cta-banner__inner">
+                <h2 class="cta-banner__title">Launch Your Business Website <em>Today</em></h2>
+                <p class="cta-banner__text">Stop losing customers to competitors who are already online. Get your professional website in 24 hours.</p>
+                <div class="cta-banner__actions">
+                    <a href="#contact" class="btn btn--white">Get My Website — &#8377;6,000</a>
+                    <a href="https://wa.me/918668582490?text=Hi%2C%20I%20want%20a%20website%20for%20my%20business" class="btn btn--white-outline" target="_blank" rel="noopener">Message on WhatsApp</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== CONTACT SECTION ========== -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Contact</span>
-                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-                <p class="section-subtitle">Ready to get started? Fill in the form and we'll get back to you within a few hours.</p>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-form-container" data-animate="fade-up">
-                    <form class="contact-form" id="contactForm">
+        <!-- ========== CONTACT ========== -->
+        <section class="contact section" id="contact">
+            <div class="container contact__inner">
+                <div class="contact__form-col">
+                    <span class="section__accent-line"></span>
+                    <h2 class="section__title">Get Your Website</h2>
+                    <p class="contact__lead">Fill in your details and we'll get back to you within 2 hours on WhatsApp.</p>
+                    <form class="contact__form" id="contactForm" novalidate>
                         <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Rahul Sharma" required>
+                            <label for="contactName" class="form-label">Your Name</label>
+                            <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Priya Sharma" required autocomplete="name">
                         </div>
                         <div class="form-group">
-                            <label for="business">Business Name</label>
-                            <input type="text" id="business" name="business" placeholder="Your Business Name" required>
+                            <label for="contactBusiness" class="form-label">Business Name</label>
+                            <input type="text" id="contactBusiness" name="business" class="form-input" placeholder="e.g. Sharma Dental Clinic" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                            <label for="contactPhone" class="form-label">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="e.g. 98765 43210" required autocomplete="tel">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your business and what you need..."></textarea>
+                            <label for="contactMessage" class="form-label">Tell Us About Your Business</label>
+                            <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="4" placeholder="What services do you offer? Any specific requirements?"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-full">
-                            Send Message
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                        </button>
+                        <button type="submit" class="btn btn--accent btn--lg contact__submit">Send via WhatsApp</button>
                     </form>
-                    <div class="form-success" id="formSuccess">
-                        <div class="success-icon">✓</div>
-                        <h3>Message Sent!</h3>
-                        <p>Thank you for reaching out. We'll get back to you within a few hours.</p>
-                    </div>
                 </div>
-                <div class="contact-info" data-animate="fade-up" data-delay="200">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        </div>
+                <aside class="contact__sidebar">
+                    <div class="contact__info-card reveal" style="--i:0">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+918668582490">+91 8668582490</a>
+                            <p class="contact__info-label">Phone</p>
+                            <a href="tel:+918668582490" class="contact__info-value">+91 86685 82490</a>
                         </div>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </div>
+                    <div class="contact__info-card reveal" style="--i:1">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         <div>
-                            <h4>Email</h4>
-                            <a href="mailto:awasthiranveer6@gmail.com">awasthiranveer6@gmail.com</a>
+                            <p class="contact__info-label">Email</p>
+                            <a href="mailto:awasthiranveer6@gmail.com" class="contact__info-value">awasthiranveer6@gmail.com</a>
                         </div>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon whatsapp-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        </div>
+                    <div class="contact__info-card reveal" style="--i:2">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                         <div>
-                            <h4>WhatsApp</h4>
-                            <a href="https://wa.me/918668582490" target="_blank" rel="noopener">Chat with us</a>
+                            <p class="contact__info-label">WhatsApp</p>
+                            <a href="https://wa.me/918668582490" class="contact__info-value" target="_blank" rel="noopener">Chat with us</a>
                         </div>
                     </div>
-                    <a href="https://wa.me/918668582490" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg btn-full">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        Chat on WhatsApp
+                    <a href="https://wa.me/918668582490?text=Hi%2C%20I%20want%20a%20website%20for%20my%20business" class="btn btn--whatsapp contact__wa-btn" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                        Message on WhatsApp
                     </a>
-                </div>
+                </aside>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <a href="#" class="logo footer-logo">
-                    <span class="logo-icon">⚡</span> RapidWeb<span class="logo-accent">Studio</span>
-                </a>
-                <p class="footer-text">Professional websites for modern businesses.</p>
-                <div class="footer-links">
-                    <a href="#benefits">Benefits</a>
-                    <a href="#included">Features</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 RapidWebStudio. All rights reserved.</p>
-                </div>
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#" class="footer__logo">&#9889; RapidWeb<strong>Studio</strong></a>
+                <p class="footer__tagline">Professional websites for local businesses across India. Delivered in 24 hours.</p>
             </div>
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <a href="#benefits">Benefits</a>
+                <a href="#included">What's Included</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p class="footer__copy">&#169; 2026 RapidWebStudio. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/918668582490" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+    <a href="https://wa.me/918668582490?text=Hi%2C%20I%20want%20a%20website%20for%20my%20business" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fafafa"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
     </a>
 
     <script src="script.js"></script>

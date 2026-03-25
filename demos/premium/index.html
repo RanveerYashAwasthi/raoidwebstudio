@@ -1,389 +1,411 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brew &amp; Bite Café — Artisan Coffee &amp; Fresh Bites in Pune</title>
-    <meta name="description" content="Brew &amp; Bite Café — Pune's favourite café for specialty coffee, freshly baked treats and healthy meals. Visit us at FC Road or order online.">
-    <meta name="keywords" content="café pune, specialty coffee, fresh bites, artisan bakery, FC Road café">
-    <meta name="author" content="Brew &amp; Bite Café">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="restaurant.café">
-    <meta property="og:title" content="Brew &amp; Bite Café — Artisan Coffee &amp; Fresh Bites">
-    <meta property="og:description" content="Pune's favourite café for specialty coffee, freshly baked treats and healthy meals.">
-    <meta property="og:url" content="https://example.com">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200">
-    <meta property="og:locale" content="en_IN">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Brew &amp; Bite Café — Artisan Coffee &amp; Fresh Bites">
-    <meta name="twitter:description" content="Pune's favourite café for specialty coffee, freshly baked treats and healthy meals.">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CafeOrCoffeeShop",
-        "name": "Brew & Bite Café",
-        "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200",
-        "address": { "@type": "PostalAddress", "streetAddress": "123 FC Road", "addressLocality": "Pune", "postalCode": "411004", "addressCountry": "IN" },
-        "telephone": "+918668582490",
-        "url": "https://example.com",
-        "servesCuisine": ["Coffee", "Bakery", "Continental"],
-        "priceRange": "₹₹",
-        "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "22:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "23:00" }
-        ],
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "320" }
-    }
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew &amp; Bite Cafe - Your neighbourhood coffee obsession on FC Road, Pune. Freshly roasted Coorg beans, baked-in-house pastries, pet-friendly patio, and live acoustic Saturdays.">
+  <meta name="theme-color" content="#2d6a4f">
+  <title>Brew &amp; Bite Cafe - FC Road, Pune</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Brew & Bite Cafe",
+    "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600&q=80",
+    "url": "https://brewandbite.in",
+    "telephone": "+918668582490",
+    "email": "hello@brewandbite.in",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 FC Road, Near Garware Bridge",
+      "addressLocality": "Pune",
+      "postalCode": "411004",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.5204,
+      "longitude": 73.8567
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:30",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday","Sunday"],
+        "opens": "08:00",
+        "closes": "23:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "320",
+      "bestRating": "5"
+    },
+    "servesCuisine": ["Coffee","Cafe","Continental","Indian"],
+    "priceRange": "$$",
+    "acceptsReservations": true,
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Pet Friendly", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Live Music", "value": true}
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<!-- Scroll Progress -->
-<div class="scroll-progress" id="scrollProgress"></div>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar">
-    <div class="container nav-container">
-        <a href="#" class="logo">Brew &amp; Bite</a>
-        <div class="nav-links">
-            <a href="#about">Our Story</a>
-            <a href="#menu">Menu</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#testimonials">Reviews</a>
-            <a href="#visit">Visit</a>
-            <a href="#contact" class="btn-nav">Book a Table</a>
-        </div>
-        <button class="nav-toggle" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" aria-label="Brew and Bite Cafe Home">Brew <span>&amp;</span> Bite</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__menu" id="navMenu">
+        <a href="#story" class="navbar__link">Our Story</a>
+        <a href="#menu" class="navbar__link">Menu</a>
+        <a href="#gallery" class="navbar__link">Gallery</a>
+        <a href="#reviews" class="navbar__link">Reviews</a>
+        <a href="#visit" class="navbar__link">Visit</a>
+        <a href="#contact" class="navbar__cta">Book a Table</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<!-- ===== HERO ===== -->
-<section class="hero" id="hero">
-    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600&q=80" alt="Brew and Bite Café interior" class="hero-bg-img" loading="eager">
-    <div class="hero-overlay"></div>
-    <div class="hero-particles" id="particles"></div>
-    <div class="container hero-content">
-        <span class="hero-badge">☕ Est. 2019 · FC Road, Pune</span>
-        <h1>Your neighbourhood<br>coffee <span class="text-accent">obsession.</span></h1>
-        <p>We're that café your friend won't stop talking about. Probably because of the cold brew. Or the croissants. Hard to say, honestly.</p>
-        <div class="hero-buttons">
-            <a href="#menu" class="btn btn-primary btn-lg">See What's Good</a>
-            <a href="#contact" class="btn btn-outline-light btn-lg">Grab a Table</a>
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600&q=80');" role="img" aria-label="Warm cafe interior with sunlight streaming through large windows"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__badge">&#9749; Est. 2019 &middot; FC Road, Pune</span>
+      <h1 class="hero__title">Your neighbourhood<br>coffee obsession.</h1>
+      <p class="hero__subtitle">We quit our IT jobs because the office Nescafe was criminal. Now we roast our own beans, bake before dawn, and obsess over every cup so you don't have to settle.</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Explore the Menu</a>
+        <a href="#story" class="btn btn--outline-light">Our Story</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="5">0</span><span class="hero__stat-suffix">+</span>
+          <span class="hero__stat-label">Years Brewing</span>
         </div>
-        <div class="hero-stats">
-            <div class="hero-stat-item">
-                <span class="hs-num" data-target="5">0</span><span class="hs-suffix">+</span>
-                <span class="hs-label">Years Brewing</span>
-            </div>
-            <div class="hero-stat-item">
-                <span class="hs-num" data-target="50">0</span><span class="hs-suffix">K+</span>
-                <span class="hs-label">Cups Served</span>
-            </div>
-            <div class="hero-stat-item">
-                <span class="hs-num" data-target="4.7">0</span><span class="hs-suffix">★</span>
-                <span class="hs-label">Google Rating</span>
-            </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="50">0</span><span class="hero__stat-suffix">K+</span>
+          <span class="hero__stat-label">Cups Served</span>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-mouse"><span></span></div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="4.7" data-decimal="true">0</span><span class="hero__stat-suffix">&#9733;</span>
+          <span class="hero__stat-label">Google Rating</span>
         </div>
+      </div>
     </div>
-</section>
-
-<!-- ===== MARQUEE ===== -->
-<div class="marquee-strip">
-    <div class="marquee-track">
-        <span>Open 7:30 AM daily</span><span class="marquee-dot">◆</span>
-        <span>We roast our own beans</span><span class="marquee-dot">◆</span>
-        <span>Pet friendly 🐶</span><span class="marquee-dot">◆</span>
-        <span>Live acoustic on Saturdays</span><span class="marquee-dot">◆</span>
-        <span>Free WiFi (the password is taped to the counter)</span><span class="marquee-dot">◆</span>
-        <span>Ask about our loyalty card</span><span class="marquee-dot">◆</span>
-        <span>Oat milk? Always.</span><span class="marquee-dot">◆</span>
-        <span>Open 7:30 AM daily</span><span class="marquee-dot">◆</span>
-        <span>We roast our own beans</span><span class="marquee-dot">◆</span>
-        <span>Pet friendly 🐶</span><span class="marquee-dot">◆</span>
-        <span>Live acoustic on Saturdays</span><span class="marquee-dot">◆</span>
-        <span>Free WiFi (the password is taped to the counter)</span><span class="marquee-dot">◆</span>
-        <span>Ask about our loyalty card</span><span class="marquee-dot">◆</span>
-        <span>Oat milk? Always.</span><span class="marquee-dot">◆</span>
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__mouse"><div class="hero__mouse-wheel"></div></div>
     </div>
-</div>
+  </header>
 
-<!-- ===== ABOUT ===== -->
-<section class="about section" id="about">
+  <!-- Marquee -->
+  <div class="marquee" aria-label="Cafe highlights">
+    <div class="marquee__track">
+      <span class="marquee__content">Open 7:30 AM daily &#9670; We roast our own beans &#9670; Pet friendly &#128054; &#9670; Live acoustic Saturdays &#9670; Free WiFi &#9670; Loyalty card &#9670; Oat milk? Always. &#9670;&nbsp;</span>
+      <span class="marquee__content" aria-hidden="true">Open 7:30 AM daily &#9670; We roast our own beans &#9670; Pet friendly &#128054; &#9670; Live acoustic Saturdays &#9670; Free WiFi &#9670; Loyalty card &#9670; Oat milk? Always. &#9670;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- About / Our Story -->
+  <section class="story" id="story">
     <div class="container">
-        <div class="about-grid">
-            <div class="about-visual fade-up">
-                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Barista pouring latte art" class="about-img" loading="lazy">
-                <div class="about-stat">
-                    <span class="stat-number">320+</span>
-                    <div><span class="stat-label">5-Star<br>Reviews</span></div>
-                </div>
+      <div class="story__grid reveal">
+        <div class="story__image-col">
+          <div class="story__image-wrap">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Barista carefully pouring a latte at Brew and Bite" class="story__image" loading="lazy" width="800" height="600">
+            <div class="story__image-badge">
+              <strong>320+</strong>
+              <span>5-Star Reviews</span>
             </div>
-            <div class="about-content fade-up">
-                <span class="section-tag">Our Story</span>
-                <h2 class="section-title-left">It started with a<br>terrible office coffee.</h2>
-                <p>In 2019, Vikram quit his IT job because — and this is true — his office Nescafé was so bad it made him wonder if good coffee existed in Pune. Spoiler: it didn't, at least not on FC Road. So he opened Brew &amp; Bite in a 200 sq ft space with a second-hand La Marzocco and a dream.</p>
-                <p>Six years later, we roast our own beans from Coorg, bake everything in-house before 6 AM, and somehow convinced 320 people to leave us 5-star reviews. Vikram still makes the first espresso every morning.</p>
-                <span class="founder-aside">"If the coffee's bad, everything else doesn't matter." — Vikram</span>
-                <div class="about-highlights">
-                    <div class="highlight">
-                        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=100&q=80" alt="Coffee beans" class="highlight-img">
-                        <div>
-                            <strong>We roast our own beans</strong>
-                            <span>Direct from a farm in Coorg. We visit every year.</span>
-                        </div>
-                    </div>
-                    <div class="highlight">
-                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=100&q=80" alt="Fresh bread" class="highlight-img">
-                        <div>
-                            <strong>Everything is baked before you wake up</strong>
-                            <span>Our baker Suresh starts at 4 AM. He's a legend.</span>
-                        </div>
-                    </div>
-                    <div class="highlight">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=100&q=80" alt="Healthy salad" class="highlight-img">
-                        <div>
-                            <strong>Vegan menu that doesn't suck</strong>
-                            <span>Real food, not sad lettuce. GF options too.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="story__text-col">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title section-title--left">It started with a terrible office coffee.</h2>
+          <p>In 2019, Vikram made a decision that his friends called "dramatic" and his parents called "concerning" &#8212; he quit a perfectly good IT job because the office Nescafe was genuinely terrible. Not "could be better" terrible. More like "who approved this" terrible.</p>
+          <p>Six months, one trip to Coorg's coffee estates, and several questionable financial decisions later, Brew &amp; Bite opened its doors on FC Road. The mission was simple: serve coffee that doesn't make people sad, and pair it with food that people actually want to eat before noon.</p>
+          <blockquote class="story__quote">
+            <p>"If the coffee's bad, everything else doesn't matter."</p>
+            <cite>&#8212; Vikram, Founder (still dramatic)</cite>
+          </blockquote>
+          <div class="story__highlights">
+            <div class="story__highlight" style="--i:0">
+              <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=120&q=80" alt="Coffee beans from Coorg" loading="lazy" width="120" height="120">
+              <div>
+                <strong>Beans from Coorg</strong>
+                <span>Single-origin, roasted weekly in small batches right here in Pune.</span>
+              </div>
+            </div>
+            <div class="story__highlight" style="--i:1">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=120&q=80" alt="Freshly baked croissants" loading="lazy" width="120" height="120">
+              <div>
+                <strong>Baked before dawn</strong>
+                <span>Our baker Suresh starts at 4 AM. Every pastry, every loaf &#8212; made in-house.</span>
+              </div>
+            </div>
+            <div class="story__highlight" style="--i:2">
+              <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=120&q=80" alt="Vegan dishes on the menu" loading="lazy" width="120" height="120">
+              <div>
+                <strong>Vegan-friendly menu</strong>
+                <span>Oat milk is default, not an upcharge. Plant-based options across the board.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- ===== MENU ===== -->
-<section class="menu section" id="menu">
+  <hr class="section-divider">
+
+  <!-- Menu -->
+  <section class="menu-section" id="menu">
     <div class="container">
-        <span class="section-tag center">Our Menu</span>
-        <h2 class="section-title fade-up">The good stuff.</h2>
-        <p class="section-subtitle fade-up">Prices are what they are because we don't cut corners. Everything's made fresh, in-house, with ingredients we'd eat ourselves.</p>
-
-        <div class="menu-tabs fade-up">
-            <button class="menu-tab active" data-category="coffee">Coffee</button>
-            <button class="menu-tab" data-category="bites">Bites</button>
-            <button class="menu-tab" data-category="cold">Cold Drinks</button>
-            <button class="menu-tab" data-category="meals">Meals</button>
+      <span class="section-tag center">What We Serve</span>
+      <h2 class="section-title">The good stuff.</h2>
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" role="tab" aria-selected="true" data-tab="coffee">Coffee</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-tab="bites">Bites</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-tab="cold">Cold Drinks</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-tab="meals">Meals</button>
+      </div>
+      <div class="menu-panels">
+        <div class="menu-panel active" id="panel-coffee" role="tabpanel" aria-label="Coffee menu">
+          <div class="menu-grid">
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=120&h=120&fit=crop&q=80" alt="Cappuccino" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Cappuccino</h3><span class="menu-item__price">&#8377;180</span></div><p>The classic done right. Velvety foam, honest espresso, zero nonsense.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1611564494260-6f21b80af7ea?w=120&h=120&fit=crop&q=80" alt="Flat White" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Flat White</h3><span class="menu-item__price">&#8377;200</span></div><p>Microfoam perfection. Stronger than a latte, smoother than your excuses.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=120&h=120&fit=crop&q=80" alt="Pour Over" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Pour Over</h3><span class="menu-item__price">&#8377;250</span></div><p>For the patient ones. Hand-poured, single-origin Coorg. Worth the wait.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=120&h=120&fit=crop&q=80" alt="Caramel Latte" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Caramel Latte</h3><span class="menu-item__price">&#8377;220</span></div><p>House-made caramel. Not that pump-bottle situation from other places.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=120&h=120&fit=crop&q=80" alt="Espresso" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Espresso</h3><span class="menu-item__price">&#8377;150</span></div><p>Short, strong, unapologetic. Our Coorg blend at its most concentrated.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=120&h=120&fit=crop&q=80" alt="Mocha" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Mocha</h3><span class="menu-item__price">&#8377;240</span></div><p>Real Belgian chocolate meets espresso. Dessert you can drink at 9 AM.</p></div></div>
+          </div>
         </div>
-
-        <div class="menu-grid fade-up">
-            <!-- Coffee -->
-            <div class="menu-item" data-category="coffee"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=120&q=80" alt="Cappuccino" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Cappuccino</h3><p>The one everyone orders. Honestly, can't go wrong.</p></div><span class="menu-item-price">₹180</span></div>
-            <div class="menu-item" data-category="coffee"><img src="https://images.unsplash.com/photo-1611564494260-6f21b80af7ea?w=120&q=80" alt="Flat White" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Flat White</h3><p>For people who think cappuccinos have too much foam. We get it.</p></div><span class="menu-item-price">₹200</span></div>
-            <div class="menu-item" data-category="coffee"><img src="https://images.unsplash.com/photo-1495774856032-8b90bbb32b32?w=120&q=80" alt="Pour Over" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Pour Over</h3><p>Coorg single-origin, brewed fresh. Vikram's personal favourite.</p></div><span class="menu-item-price">₹250</span></div>
-            <div class="menu-item" data-category="coffee"><img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=120&q=80" alt="Caramel Latte" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Caramel Latte</h3><p>We make the caramel in-house. It's dangerous.</p></div><span class="menu-item-price">₹220</span></div>
-            <div class="menu-item" data-category="coffee"><img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=120&q=80" alt="Espresso" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Espresso</h3><p>No milk, no sugar, no nonsense. Just coffee.</p></div><span class="menu-item-price">₹150</span></div>
-            <div class="menu-item" data-category="coffee"><img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=120&q=80" alt="Mocha" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Mocha</h3><p>For when you can't decide between coffee and chocolate. Belgian cocoa.</p></div><span class="menu-item-price">₹240</span></div>
-
-            <!-- Bites -->
-            <div class="menu-item" data-category="bites" style="display:none"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=120&q=80" alt="Butter Croissant" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Butter Croissant</h3><p>Baked at 5:30 AM. Sells out by noon. Just saying.</p></div><span class="menu-item-price">₹120</span></div>
-            <div class="menu-item" data-category="bites" style="display:none"><img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=120&q=80" alt="Blueberry Muffin" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Blueberry Muffin</h3><p>Loaded with real berries &amp; oat crumble</p></div><span class="menu-item-price">₹140</span></div>
-            <div class="menu-item" data-category="bites" style="display:none"><img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=120&q=80" alt="Avocado Toast" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Avocado Toast</h3><p>Yes, it's ₹220 avo toast. Yes, it's worth it. Sourdough base.</p></div><span class="menu-item-price">₹220</span></div>
-            <div class="menu-item" data-category="bites" style="display:none"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=120&q=80" alt="Chocolate Brownie" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Chocolate Brownie</h3><p>Fudgy dark chocolate with sea salt</p></div><span class="menu-item-price">₹160</span></div>
-            <div class="menu-item" data-category="bites" style="display:none"><img src="https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=120&q=80" alt="Cheese Garlic Bread" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Cheese Garlic Bread</h3><p>Toasted baguette with herb butter &amp; mozzarella</p></div><span class="menu-item-price">₹180</span></div>
-            <div class="menu-item" data-category="bites" style="display:none"><img src="https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=120&q=80" alt="Granola Bowl" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Granola Bowl</h3><p>Greek yogurt, house granola &amp; seasonal fruits</p></div><span class="menu-item-price">₹200</span></div>
-
-            <!-- Cold Drinks -->
-            <div class="menu-item" data-category="cold" style="display:none"><img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=120&q=80" alt="Iced Americano" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Iced Americano</h3><p>Double shot over ice with a citrus twist</p></div><span class="menu-item-price">₹190</span></div>
-            <div class="menu-item" data-category="cold" style="display:none"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=120&q=80" alt="Cold Brew" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Cold Brew</h3><p>Steeped 16 hours. Smoother than your Spotify playlist.</p></div><span class="menu-item-price">₹230</span></div>
-            <div class="menu-item" data-category="cold" style="display:none"><img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=120&q=80" alt="Mango Smoothie" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Mango Smoothie</h3><p>Alphonso mango, yogurt &amp; honey</p></div><span class="menu-item-price">₹210</span></div>
-            <div class="menu-item" data-category="cold" style="display:none"><img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=120&q=80" alt="Iced Matcha Latte" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Iced Matcha Latte</h3><p>Ceremonial-grade matcha with oat milk</p></div><span class="menu-item-price">₹250</span></div>
-
-            <!-- Meals -->
-            <div class="menu-item" data-category="meals" style="display:none"><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=120&q=80" alt="Paneer Wrap" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Paneer Wrap</h3><p>Grilled paneer, veggies &amp; mint chutney in a tortilla</p></div><span class="menu-item-price">₹280</span></div>
-            <div class="menu-item" data-category="meals" style="display:none"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=120&q=80" alt="Grilled Chicken Bowl" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Grilled Chicken Bowl</h3><p>Brown rice, herb chicken, hummus &amp; greens</p></div><span class="menu-item-price">₹350</span></div>
-            <div class="menu-item" data-category="meals" style="display:none"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=120&q=80" alt="Margherita Pizza" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Margherita Pizza</h3><p>Wood-fired, 90 seconds in the oven. Simple and perfect.</p></div><span class="menu-item-price">₹320</span></div>
-            <div class="menu-item" data-category="meals" style="display:none"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=120&q=80" alt="Pasta Alfredo" class="menu-item-img" loading="lazy"><div class="menu-item-info"><h3>Pasta Alfredo</h3><p>Penne in creamy parmesan sauce with mushrooms</p></div><span class="menu-item-price">₹300</span></div>
+        <div class="menu-panel" id="panel-bites" role="tabpanel" aria-label="Bites menu">
+          <div class="menu-grid">
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=120&h=120&fit=crop&q=80" alt="Butter Croissant" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Butter Croissant</h3><span class="menu-item__price">&#8377;120</span></div><p>Suresh's 4 AM masterpiece. 27 layers. We counted once.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=120&h=120&fit=crop&q=80" alt="Blueberry Muffin" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Blueberry Muffin</h3><span class="menu-item__price">&#8377;140</span></div><p>Actually has blueberries. A revolutionary concept, we know.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=120&h=120&fit=crop&q=80" alt="Avocado Toast" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Avocado Toast</h3><span class="menu-item__price">&#8377;220</span></div><p>Sourdough, smashed avo, chili flakes, poached egg. Instagram approved.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=120&h=120&fit=crop&q=80" alt="Chocolate Brownie" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Chocolate Brownie</h3><span class="menu-item__price">&#8377;160</span></div><p>Fudgy, not cakey. We will die on this hill.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1573140401552-3fab0b24306f?w=120&h=120&fit=crop&q=80" alt="Cheese Garlic Bread" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Cheese Garlic Bread</h3><span class="menu-item__price">&#8377;180</span></div><p>Loaded. Not the sad kind with three cheese shreds.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=120&h=120&fit=crop&q=80" alt="Granola Bowl" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Granola Bowl</h3><span class="menu-item__price">&#8377;200</span></div><p>House granola, Greek yogurt, seasonal fruit. For your healthy era.</p></div></div>
+          </div>
         </div>
+        <div class="menu-panel" id="panel-cold" role="tabpanel" aria-label="Cold drinks menu">
+          <div class="menu-grid">
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=120&h=120&fit=crop&q=80" alt="Iced Americano" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Iced Americano</h3><span class="menu-item__price">&#8377;190</span></div><p>No sugar, no milk, no distractions. Just cold, caffeinated truth.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=120&h=120&fit=crop&q=80" alt="Cold Brew" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Cold Brew</h3><span class="menu-item__price">&#8377;230</span></div><p>18-hour steep. Smooth enough to drink black. You'll want two.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=120&h=120&fit=crop&q=80" alt="Mango Smoothie" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Mango Smoothie</h3><span class="menu-item__price">&#8377;210</span></div><p>Alphonso season or bust. Off-season, we use frozen Ratnagiri. Still amazing.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=120&h=120&fit=crop&q=80" alt="Iced Matcha Latte" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Iced Matcha Latte</h3><span class="menu-item__price">&#8377;250</span></div><p>Ceremonial grade, oat milk, zero judgment for switching sides.</p></div></div>
+          </div>
+        </div>
+        <div class="menu-panel" id="panel-meals" role="tabpanel" aria-label="Meals menu">
+          <div class="menu-grid">
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=120&h=120&fit=crop&q=80" alt="Paneer Wrap" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Paneer Wrap</h3><span class="menu-item__price">&#8377;280</span></div><p>Tandoori paneer, mint chutney, crunchy slaw. Held together by hope and a tortilla.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=120&h=120&fit=crop&q=80" alt="Grilled Chicken Bowl" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Grilled Chicken Bowl</h3><span class="menu-item__price">&#8377;350</span></div><p>Herb chicken, quinoa, roasted veggies. Your gym buddy's dream lunch.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=120&h=120&fit=crop&q=80" alt="Margherita Pizza" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Margherita Pizza</h3><span class="menu-item__price">&#8377;320</span></div><p>Thin crust, San Marzano sauce, fresh mozzarella. Simple. Perfect.</p></div></div>
+            <div class="menu-item"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=120&h=120&fit=crop&q=80" alt="Pasta Alfredo" loading="lazy" width="120" height="120"><div class="menu-item__info"><div class="menu-item__header"><h3>Pasta Alfredo</h3><span class="menu-item__price">&#8377;300</span></div><p>Creamy, garlicky, shameless. Pairs well with zero regrets.</p></div></div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- ===== PARALLAX BREAK ===== -->
-<section class="parallax-break">
-    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1600&q=80" alt="Café atmosphere" class="parallax-bg" loading="lazy">
-    <div class="parallax-overlay"></div>
-    <div class="container parallax-content">
-        <blockquote class="fade-up">“Coffee first.<br>Schemes later.”</blockquote>
-        <cite class="fade-up">— handwritten on our chalkboard since day one</cite>
-        <a href="#contact" class="btn btn-outline-light btn-lg fade-up">Reserve Your Table →</a>
-    </div>
-</section>
-
-<!-- ===== GALLERY ===== -->
-<section class="gallery section" id="gallery">
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
     <div class="container">
-        <h2 class="section-title fade-up">Some days at the café</h2>
-        <p class="section-subtitle fade-up">No photographer, no filters. Just us on a good day.<br><span class="aside-small">(Okay, maybe one filter.)</span></p>
-
-        <div class="gallery-grid">
-            <div class="gallery-item gi-1"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Latte art" loading="lazy"><div class="gallery-caption">This took 3 tries</div></div>
-            <div class="gallery-item gi-2"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Fresh pastries" loading="lazy"><div class="gallery-caption">5:30 AM haul</div></div>
-            <div class="gallery-item gi-3"><img src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=600&q=80" alt="Café interiors" loading="lazy"><div class="gallery-caption">The corner everyone fights for</div></div>
-            <div class="gallery-item gi-4"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Food plating" loading="lazy"><div class="gallery-caption">Our chef showing off</div></div>
-            <div class="gallery-item gi-5"><img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80" alt="Outdoor seating" loading="lazy"><div class="gallery-caption">When Pune weather cooperates</div></div>
-            <div class="gallery-item gi-6"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="Coffee brewing" loading="lazy"><div class="gallery-caption">The morning ritual</div></div>
-        </div>
+      <span class="section-tag center">Snaps &amp; Vibes</span>
+      <h2 class="section-title">@brewandbite</h2>
+      <div class="gallery__grid reveal">
+        <figure class="gallery__item gallery__item--tall" style="--i:0">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="People dining inside a warm cafe" loading="lazy" width="600" height="800">
+          <figcaption>Friday night energy</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--wide" style="--i:1">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Customers at tables in a sunlit cafe" loading="lazy" width="600" height="400">
+          <figcaption>Morning crowd</figcaption>
+        </figure>
+        <figure class="gallery__item" style="--i:2">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=600&q=80" alt="Couple enjoying coffee at a cozy table" loading="lazy" width="600" height="600">
+          <figcaption>The corner everyone fights for</figcaption>
+        </figure>
+        <figure class="gallery__item" style="--i:3">
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80" alt="Friends chatting over brunch at a cafe" loading="lazy" width="600" height="600">
+          <figcaption>Sunday brunch squad</figcaption>
+        </figure>
+      </div>
+      <a href="https://instagram.com/brewandbite" target="_blank" rel="noopener noreferrer" class="gallery__instagram-link reveal">Follow us on Instagram &rarr;</a>
     </div>
-</section>
+  </section>
 
-<!-- ===== TESTIMONIALS ===== -->
-<section class="testimonials section" id="testimonials">
+  <hr class="section-divider">
+
+  <!-- Testimonials -->
+  <section class="reviews" id="reviews">
     <div class="container">
-        <h2 class="section-title fade-up">Don't take our word for it.</h2>
-        <p class="section-subtitle fade-up">Here's what actual humans said on Google. We didn't write these. <span class="aside-small">(We wish we were this eloquent.)</span></p>
-
-        <div class="testimonials-grid fade-up">
-            <div class="testimonial-card">
-                <div class="tc-stars">★★★★★</div>
-                <p class="tc-text">"Genuinely the best pour over I've had in Pune. I've been coming here every single morning for 4 years and I'm not even exaggerating. The baristas know my order."</p>
-                <div class="tc-author">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Ananya S." class="tc-avatar-img">
-                    <div><strong>Ananya S.</strong><span>127 Google reviews</span></div>
-                </div>
-            </div>
-            <div class="testimonial-card tc-featured">
-                <div class="tc-stars">★★★★☆</div>
-                <p class="tc-text">"I'll be honest — the avocado toast is overpriced. But it's also the best one in the city so I keep coming back. Cold brew is non-negotiable. Parking is a nightmare though, take a rick."</p>
-                <div class="tc-author">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Rahul K." class="tc-avatar-img">
-                    <div><strong>Rahul K.</strong><span>Food Blogger · @rahuleats</span></div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="tc-stars">★★★★★</div>
-                <p class="tc-text">"Booked the place for our team offsite (12 people) and they handled it perfectly. Vikram personally came over to check on us. You don't get that at Starbucks."</p>
-                <div class="tc-author">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Priya M." class="tc-avatar-img">
-                    <div><strong>Priya M.</strong><span>Google Local Guide</span></div>
-                </div>
-            </div>
+      <span class="section-tag center">Kind Words</span>
+      <h2 class="section-title">What people say.</h2>
+      <div class="reviews__grid reveal">
+        <div class="reviews__featured">
+          <div class="reviews__badge-wrap"><span class="reviews__badge">Most Helpful</span></div>
+          <div class="reviews__stars" aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <blockquote class="reviews__text">"I came for the avocado toast, stayed for the cold brew, and now I basically pay rent here. The sourdough is legit, the vibe is immaculate, and they never judge me for ordering my third coffee at 4 PM. Slight dock for the parking situation &#8212; but honestly, just walk."</blockquote>
+          <div class="reviews__author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Rahul K." loading="lazy" width="48" height="48">
+            <div><strong>Rahul K.</strong><span>Food Blogger &middot; @rahuleats</span></div>
+          </div>
         </div>
+        <div class="reviews__small-wrap">
+          <div class="reviews__small">
+            <div class="reviews__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="reviews__text">"Best cafe in Pune, hands down. The Coorg beans make such a difference. I'm never going back to chain coffee. Also, their brownies should be illegal."</blockquote>
+            <div class="reviews__author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Ananya S." loading="lazy" width="48" height="48">
+              <div><strong>Ananya S.</strong><span>Regular since 2020</span></div>
+            </div>
+          </div>
+          <div class="reviews__small">
+            <div class="reviews__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="reviews__text">"Brought my golden retriever and they gave him a biscuit before they even took my order. Pet-friendly done right. Oh, and the flat white is genuinely world-class."</blockquote>
+            <div class="reviews__author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Priya M." loading="lazy" width="48" height="48">
+              <div><strong>Priya M.</strong><span>Dog mom &middot; Loyal customer</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- ===== INSTAGRAM ===== -->
-<section class="instagram section" id="instagram">
+  <!-- Visit -->
+  <section class="visit" id="visit">
     <div class="container">
-        <h2 class="section-title fade-up">We look good on Instagram too.</h2>
-        <p class="section-subtitle fade-up">Follow along for daily brews, behind-the-scenes chaos, and the occasional latte art that actually worked.</p>
-
-        <div class="insta-grid">
-            <div class="insta-item"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=400&q=80" alt="Instagram" loading="lazy"><div class="insta-overlay"><span>♥ 142</span></div></div>
-            <div class="insta-item"><img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?w=400&q=80" alt="Instagram" loading="lazy"><div class="insta-overlay"><span>♥ 89</span></div></div>
-            <div class="insta-item"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=400&q=80" alt="Instagram" loading="lazy"><div class="insta-overlay"><span>♥ 213</span></div></div>
-            <div class="insta-item"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=80" alt="Instagram" loading="lazy"><div class="insta-overlay"><span>♥ 176</span></div></div>
-            <div class="insta-item"><img src="https://images.unsplash.com/photo-1525480122096-1e9c5a7e5a27?w=400&q=80" alt="Instagram" loading="lazy"><div class="insta-overlay"><span>♥ 98</span></div></div>
-            <div class="insta-item"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?w=400&q=80" alt="Instagram" loading="lazy"><div class="insta-overlay"><span>♥ 155</span></div></div>
+      <span class="section-tag center">Find Us</span>
+      <h2 class="section-title">Come find us.</h2>
+      <div class="visit__grid reveal">
+        <div class="visit__info">
+          <div class="visit__info-grid">
+            <div class="visit__info-item"><strong>Address</strong><span>123 FC Road, Near Garware Bridge,<br>Pune 411004</span></div>
+            <div class="visit__info-item"><strong>Hours</strong><span>Mon &#8211; Fri: 7:30 AM &#8211; 10 PM<br>Sat &#8211; Sun: 8 AM &#8211; 11 PM</span></div>
+            <div class="visit__info-item"><strong>Phone</strong><a href="tel:+918668582490">+91 86685 82490</a></div>
+            <div class="visit__info-item"><strong>Email</strong><a href="mailto:hello@brewandbite.in">hello@brewandbite.in</a></div>
+          </div>
         </div>
-
-        <div class="insta-cta fade-up">
-            <a href="https://instagram.com" target="_blank" class="btn btn-outline">Follow @brewandbite</a>
+        <div class="visit__map">
+          <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="Map area near Brew and Bite Cafe on FC Road, Pune" loading="lazy" width="800" height="400">
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- ===== VISIT ===== -->
-<section class="visit section" id="visit">
+  <hr class="section-divider">
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
     <div class="container">
-        <h2 class="section-title fade-up">Come find us</h2>
-        <p class="section-subtitle fade-up">We're the place with the brown awning next to the bookshop. You'll smell us before you see us.</p>
-
-        <div class="visit-wrapper fade-up">
-            <div class="visit-info-grid">
-                <div class="visit-card"><div class="vc-icon">📍</div><h3>Address</h3><p>123 FC Road, Near<br>Garware Bridge, Pune</p></div>
-                <div class="visit-card"><div class="vc-icon">🕐</div><h3>Hours</h3><p>Mon–Fri: 7:30 AM – 10 PM<br>Sat–Sun: 8 AM – 11 PM</p></div>
-                <div class="visit-card"><div class="vc-icon">📞</div><h3>Phone</h3><p><a href="tel:+918668582490">+91 86685 82490</a></p></div>
-                <div class="visit-card"><div class="vc-icon">📧</div><h3>Email</h3><p><a href="mailto:hello@brewandbite.in">hello@brewandbite.in</a></p></div>
-            </div>
-            <div class="map-placeholder">
-                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="Location map area" class="map-img" loading="lazy">
-            </div>
+      <span class="section-tag center">Reserve</span>
+      <h2 class="section-title">Want to book a table?</h2>
+      <p class="contact__subtitle">Drop us a message. Or just show up &#8212; we'll make it work.</p>
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="contact__field">
+          <label for="c-name">Your name</label>
+          <input type="text" id="c-name" name="name" placeholder="e.g. Vikram" required autocomplete="name">
         </div>
+        <div class="contact__field">
+          <label for="c-phone">Phone number</label>
+          <input type="tel" id="c-phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel">
+        </div>
+        <div class="contact__row">
+          <div class="contact__field">
+            <label for="c-date">Preferred date</label>
+            <input type="date" id="c-date" name="date" required>
+          </div>
+          <div class="contact__field">
+            <label for="c-guests">Guests</label>
+            <select id="c-guests" name="guests" required>
+              <option value="">Select</option>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="6">6+ people</option>
+            </select>
+          </div>
+        </div>
+        <div class="contact__field">
+          <label for="c-message">Message <span>(optional)</span></label>
+          <textarea id="c-message" name="message" rows="4" placeholder="Any special requests? Outdoor seating? Dog-friendly spot?"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send via WhatsApp</button>
+      </form>
     </div>
-</section>
+  </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="contact section" id="contact">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-        <h2 class="section-title fade-up">Want to book a table?</h2>
-        <p class="section-subtitle fade-up">For groups of 6+, drop us a message so we can set things up. Walk-ins are always welcome though — we'll find you a spot.</p>
-
-        <form class="contact-form fade-up" id="contact-form">
-            <div class="form-row">
-                <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Rahul Sharma" required></div>
-                <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+91 98765 43210"></div>
-            </div>
-            <div class="form-row">
-                <div class="form-group"><label for="date">Preferred Date</label><input type="date" id="date" name="date"></div>
-                <div class="form-group"><label for="guests">Guests</label><input type="number" id="guests" name="guests" placeholder="2" min="1" max="20"></div>
-            </div>
-            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="3" placeholder="Any special requests?"></textarea></div>
-            <button type="submit" class="btn btn-primary btn-full btn-lg">Send via WhatsApp →</button>
-        </form>
-    </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-    <div class="container footer-content">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <h3 class="footer-logo">Brew &amp; Bite Café</h3>
-                <p class="footer-tagline">Good coffee, no attitude. Since 2019.</p>
-                <div class="footer-social">
-                    <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">📷</a>
-                    <a href="https://facebook.com" target="_blank" class="social-link" title="Facebook">📘</a>
-                    <a href="https://wa.me/918668582490" target="_blank" class="social-link" title="WhatsApp">💬</a>
-                </div>
-            </div>
-            <div class="footer-links-group">
-                <h4>Quick Links</h4>
-                <a href="#about">Our Story</a>
-                <a href="#menu">Menu</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#testimonials">Reviews</a>
-                <a href="#contact">Book a Table</a>
-            </div>
-            <div class="footer-links-group">
-                <h4>Visit Us</h4>
-                <p>123 FC Road, Pune</p>
-                <p>Mon–Fri: 7:30 AM – 10 PM</p>
-                <p>Sat–Sun: 8 AM – 11 PM</p>
-                <a href="tel:+918668582490">+91 86685 82490</a>
-            </div>
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">Brew <span>&amp;</span> Bite</a>
+          <p class="footer__tagline">Your neighbourhood coffee obsession since 2019.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/brewandbite" target="_blank" rel="noopener noreferrer" aria-label="Instagram">&#128247;</a>
+            <a href="https://wa.me/918668582490" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">&#128172;</a>
+            <a href="https://facebook.com/brewandbite" target="_blank" rel="noopener noreferrer" aria-label="Facebook">&#128077;</a>
+            <a href="https://youtube.com/@brewandbite" target="_blank" rel="noopener noreferrer" aria-label="YouTube">&#127916;</a>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Brew &amp; Bite Café. Made with too much caffeine in Pune.</p>
+        <div class="footer__links">
+          <strong>Quick Links</strong>
+          <a href="#story">Our Story</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Book a Table</a>
         </div>
+        <div class="footer__hours">
+          <strong>Hours</strong>
+          <span>Monday &#8211; Friday</span>
+          <span>7:30 AM &#8211; 10:00 PM</span>
+          <span class="footer__hours-gap">Saturday &#8211; Sunday</span>
+          <span>8:00 AM &#8211; 11:00 PM</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2019&#8211;2026 Brew &amp; Bite Cafe. Made with too much caffeine in Pune.</p>
+      </div>
     </div>
-</footer>
+  </footer>
 
-<!-- WhatsApp Float -->
-<a href="https://wa.me/918668582490?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Brew%20%26%20Bite%20Café" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.696-6.28-1.886l-.438-.297-2.654.89.89-2.654-.297-.438A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
-</a>
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/918668582490" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
-<!-- Demo Banner -->
-<div class="demo-banner">
-    ✨ This is a <strong>₹6,000</strong> website demo — <a href="../../#pricing">Get yours at RapidWebStudio →</a>
-</div>
+  <!-- Demo Banner -->
+  <div class="demo-banner">
+    <p>This is a <strong>&#8377;6,000</strong> website demo &#8212; <a href="../../#pricing">Get yours at RapidWebStudio &#8594;</a></p>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
