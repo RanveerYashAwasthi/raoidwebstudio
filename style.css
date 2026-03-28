@@ -1211,8 +1211,21 @@ a:focus-visible,
 
 /* ======================== RESPONSIVE ======================== */
 
-/* --- Mobile Nav Overlay --- */
+/* --- Responsive BR helper --- */
+.desktop-br { display: inline; }
+
+/* --- Mobile (up to 639px) --- */
 @media (max-width: 639px) {
+
+    /* -- Container -- */
+    .container {
+        padding-inline: var(--sp-4);
+    }
+
+    /* -- Responsive BR: hide on mobile -- */
+    .desktop-br { display: none; }
+
+    /* -- Navbar -- */
     .navbar__nav {
         position: fixed;
         inset: 0;
@@ -1251,6 +1264,12 @@ a:focus-visible,
         z-index: 101;
     }
 
+    /* -- Hero -- */
+    .hero {
+        padding-top: calc(var(--navbar-h) + var(--sp-8));
+        padding-bottom: var(--sp-16);
+    }
+
     .hero__inner {
         grid-template-columns: 1fr;
         text-align: left;
@@ -1260,21 +1279,155 @@ a:focus-visible,
         display: none;
     }
 
+    .hero__title {
+        font-size: clamp(2rem, 8vw, 3rem);
+        line-height: 1.12;
+    }
+
+    .hero__text {
+        font-size: var(--text-base);
+        line-height: 1.6;
+    }
+
+    .hero__badge {
+        font-size: 0.65rem;
+        padding: 6px 10px;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        gap: var(--sp-3);
+        margin-bottom: var(--sp-8);
+    }
+
+    .hero__actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero__trust {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--sp-2);
+    }
+
+    /* -- Section headers -- */
+    .section__header {
+        margin-bottom: var(--sp-8);
+    }
+
+    .section {
+        padding-block: clamp(48px, 8vw, 80px);
+    }
+
+    /* -- Benefits -- */
     .benefits__grid {
         grid-template-columns: 1fr;
+        gap: var(--sp-4);
     }
 
+    .benefits__item {
+        padding: var(--sp-4);
+    }
+
+    .benefits__desc {
+        max-width: none;
+    }
+
+    /* -- Pricing -- */
+    .pricing__card {
+        padding: var(--sp-6) var(--sp-4);
+    }
+
+    .pricing__features {
+        grid-template-columns: 1fr;
+        gap: var(--sp-3);
+        max-width: none;
+    }
+
+    .pricing__amount {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+    }
+
+    .pricing__cta {
+        max-width: none;
+    }
+
+    /* -- Process -- */
     .process__timeline {
         grid-template-columns: 1fr;
-        gap: var(--sp-6);
+        gap: var(--sp-4);
     }
 
+    .process__step {
+        padding: var(--sp-4) var(--sp-3);
+    }
+
+    .process__desc {
+        max-width: none;
+    }
+
+    /* -- CTA Banner -- */
+    .cta-banner {
+        padding-block: var(--sp-12);
+    }
+
+    .cta-banner__title {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+    }
+
+    .cta-banner__text {
+        font-size: var(--text-sm);
+    }
+
+    .cta-banner__actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-banner__actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* -- Contact -- */
     .contact__inner {
         grid-template-columns: 1fr;
+        gap: var(--sp-8);
+    }
+
+    .contact__lead {
+        font-size: var(--text-base);
+    }
+
+    .contact__sidebar {
+        gap: var(--sp-3);
+    }
+
+    .contact__info-card {
+        padding: var(--sp-3) var(--sp-4);
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* -- Footer -- */
+    .footer {
+        padding-block: var(--sp-12);
+    }
+
+    .footer__nav {
+        gap: var(--sp-4);
     }
 }
 
-/* --- Tablet --- */
+/* --- Tablet (640px+) --- */
 @media (min-width: 640px) {
     .navbar__hamburger {
         display: none;
@@ -1297,14 +1450,14 @@ a:focus-visible,
     }
 }
 
-/* --- Small desktop --- */
+/* --- Small desktop (768px+) --- */
 @media (min-width: 768px) {
     .pricing__card {
         padding: var(--sp-12) var(--sp-8);
     }
 }
 
-/* --- Desktop --- */
+/* --- Desktop (1024px+) --- */
 @media (min-width: 1024px) {
     .hero__inner {
         grid-template-columns: 55% 45%;
@@ -1333,5 +1486,4 @@ a:focus-visible,
     .process__step {
         position: relative;
     }
-
 }
