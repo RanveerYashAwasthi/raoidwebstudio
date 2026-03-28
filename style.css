@@ -1359,6 +1359,10 @@ a:focus-visible,
     .pricing__card {
         padding: var(--sp-6) var(--sp-4);
         text-align: center;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
     }
 
     .pricing__features {
