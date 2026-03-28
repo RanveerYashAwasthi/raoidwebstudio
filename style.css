@@ -1334,6 +1334,15 @@ a:focus-visible,
 
     .benefits__item {
         padding: var(--sp-4);
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .benefits__item:hover {
+        box-shadow: none;
+        transform: none;
     }
 
     .benefits__item--featured {
@@ -1364,6 +1373,11 @@ a:focus-visible,
 
     .pricing__feature {
         justify-content: center;
+        width: fit-content;
+    }
+
+    .pricing__note {
+        text-align: center;
     }
 
     .pricing__amount {
