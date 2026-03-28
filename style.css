@@ -1291,8 +1291,8 @@ a:focus-visible,
     }
 
     .hero__badge {
-        font-size: 0.65rem;
-        padding: 6px 10px;
+        font-size: 0.7rem;
+        padding: 6px 12px;
     }
 
     .hero__actions {
@@ -1309,7 +1309,7 @@ a:focus-visible,
     .hero__trust {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--sp-2);
+        gap: var(--sp-3);
     }
 
     /* -- Section headers -- */
@@ -1318,7 +1318,7 @@ a:focus-visible,
         text-align: center;
     }
 
-    .section__accent-line {
+    .section__header .section__accent-line {
         margin-inline: auto;
     }
 
@@ -1338,17 +1338,14 @@ a:focus-visible,
         border: none;
         border-radius: 0;
         box-shadow: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .benefits__item:hover {
         box-shadow: none;
         transform: none;
-    }
-
-    .benefits__item--featured {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 
     .benefits__desc {
@@ -1368,16 +1365,16 @@ a:focus-visible,
     .pricing__features {
         grid-template-columns: 1fr;
         gap: var(--sp-3);
-        max-width: none;
+        max-width: 260px;
         margin-inline: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .pricing__feature {
-        justify-content: center;
-        width: fit-content;
+        justify-content: flex-start;
+        width: auto;
     }
 
     .pricing__note {
@@ -1395,7 +1392,7 @@ a:focus-visible,
     /* -- Process -- */
     .process__timeline {
         grid-template-columns: 1fr;
-        gap: var(--sp-4);
+        gap: var(--sp-6);
     }
 
     .process__step {
@@ -1412,11 +1409,12 @@ a:focus-visible,
     }
 
     .cta-banner__title {
-        font-size: clamp(1.3rem, 5vw, 1.8rem);
+        font-size: clamp(1.5rem, 6vw, 2rem);
     }
 
     .cta-banner__text {
         font-size: var(--text-sm);
+        opacity: 0.85;
     }
 
     .cta-banner__actions {
@@ -1445,6 +1443,11 @@ a:focus-visible,
 
     .contact__info-card {
         padding: var(--sp-3) var(--sp-4);
+    }
+
+    .contact__info-value {
+        overflow-wrap: break-word;
+        word-break: break-all;
     }
 
     .form-actions {
