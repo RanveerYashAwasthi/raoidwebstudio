@@ -1262,6 +1262,7 @@ a:focus-visible,
     .navbar__hamburger {
         display: flex;
         z-index: 101;
+        margin-left: auto;
     }
 
     /* -- Hero -- */
@@ -1314,6 +1315,11 @@ a:focus-visible,
     /* -- Section headers -- */
     .section__header {
         margin-bottom: var(--sp-8);
+        text-align: center;
+    }
+
+    .section__accent-line {
+        margin-inline: auto;
     }
 
     .section {
@@ -1330,6 +1336,12 @@ a:focus-visible,
         padding: var(--sp-4);
     }
 
+    .benefits__item--featured {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .benefits__desc {
         max-width: none;
     }
@@ -1337,12 +1349,14 @@ a:focus-visible,
     /* -- Pricing -- */
     .pricing__card {
         padding: var(--sp-6) var(--sp-4);
+        text-align: center;
     }
 
     .pricing__features {
         grid-template-columns: 1fr;
         gap: var(--sp-3);
         max-width: none;
+        margin-inline: auto;
     }
 
     .pricing__amount {
