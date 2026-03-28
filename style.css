@@ -1365,11 +1365,11 @@ a:focus-visible,
     .pricing__features {
         grid-template-columns: 1fr;
         gap: var(--sp-3);
-        max-width: 260px;
-        margin-inline: auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: fit-content;
+        margin-inline: auto;
     }
 
     .pricing__feature {
