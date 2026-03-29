@@ -18,8 +18,8 @@
   --color-footer-bg: #1b2e28;
   --color-footer-text: #f2efea;
 
-  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Cormorant Infant', Georgia, 'Times New Roman', serif;
+  --font-body: 'Instrument Sans', system-ui, -apple-system, sans-serif;
   --font-accent: 'Caveat', cursive;
 
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
@@ -46,6 +46,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -114,7 +115,7 @@ ul { list-style: none; }
   margin-bottom: 48px;
   color: var(--color-text);
 }
-.section-title--left { text-align: left; }
+.section-title--left { text-align: center; }
 
 .section-divider {
   border: none;
@@ -321,6 +322,7 @@ ul { list-style: none; }
   margin: 0 auto;
   padding: 120px 24px 80px;
   width: 100%;
+  text-align: center;
 }
 
 .hero__badge {
@@ -345,6 +347,7 @@ ul { list-style: none; }
   color: #faf9f6;
   margin-bottom: 20px;
   max-width: 680px;
+  margin-inline: auto;
 }
 
 .hero__subtitle {
@@ -352,7 +355,7 @@ ul { list-style: none; }
   color: rgba(250, 249, 246, 0.75);
   max-width: 520px;
   line-height: 1.7;
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
 }
 
 .hero__actions {
@@ -360,6 +363,7 @@ ul { list-style: none; }
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 48px;
+  justify-content: center;
 }
 
 .hero__stats {
@@ -367,6 +371,7 @@ ul { list-style: none; }
   gap: 48px;
   padding-top: 32px;
   border-top: 1px solid rgba(250, 249, 246, 0.12);
+  justify-content: center;
 }
 
 .hero__stat {
@@ -501,6 +506,9 @@ ul { list-style: none; }
 .story__text-col p {
   color: var(--color-text-secondary);
   margin-bottom: 16px;
+  max-width: 62ch;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .story__quote {
@@ -508,6 +516,7 @@ ul { list-style: none; }
   padding: 24px 0;
   border-top: 1px solid var(--color-card-border);
   border-bottom: 1px solid var(--color-card-border);
+  text-align: center;
 }
 .story__quote p {
   font-family: var(--font-accent);
@@ -529,11 +538,15 @@ ul { list-style: none; }
   flex-direction: column;
   gap: 20px;
   margin-top: 32px;
+  align-items: center;
 }
 .story__highlight {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 30rem;
 }
 .story__highlight img {
   width: 64px;
@@ -811,6 +824,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 12px;
+  justify-content: center;
 }
 .reviews__author img {
   width: 48px;
@@ -894,6 +908,8 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+  justify-items: center;
+  text-align: center;
 }
 .visit__info-item {
   display: flex;
@@ -1162,6 +1178,83 @@ ul { list-style: none; }
 /* ==============================================
    RESPONSIVE � Mobile First
    ============================================== */
+
+@media (max-width: 767px) {
+  .hero__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero__stats {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  .hero__stat {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(250, 249, 246, 0.12);
+  }
+
+  .hero__stat:last-child {
+    border-bottom: 0;
+  }
+
+  .btn {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .menu-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .menu-tab {
+    width: 100%;
+    white-space: normal;
+    padding: 12px 14px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .menu-item {
+    padding: 16px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-card-border);
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .menu-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .reviews__small-wrap {
+    gap: 0;
+  }
+
+  .reviews__featured,
+  .reviews__small {
+    padding: 20px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-card-border);
+    border-radius: 0;
+  }
+
+  .visit__info-grid,
+  .contact__row {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* 640px+ */
 @media (min-width: 640px) {

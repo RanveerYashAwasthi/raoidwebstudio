@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velvet Frame Salon offers haircuts, color transformations, bridal styling, nails, and luxury beauty services in Koregaon Park, Pune.">
+  <title>Velvet Frame Salon | Koregaon Park, Pune</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Velvet Frame Salon home">
+        <span class="brand__badge">VF</span>
+        <span class="brand__text">
+          <strong>Velvet Frame</strong>
+          <span>Salon Atelier</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#artists">Artists</a>
+        <a href="#results">Results</a>
+        <a href="#packages">Packages</a>
+        <a href="#book">Book</a>
+      </nav>
+      <a class="header-cta" href="#book">Book Now</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Koregaon Park &middot; Hair, Color, Bridal, Nails</p>
+          <h1>The appointment you book when the look actually matters.</h1>
+          <p class="hero__lede">Velvet Frame blends salon precision with editorial polish. Clients come for signature color, event styling, and the rare luxury of leaving exactly as imagined.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#book">Book Appointment</a>
+            <a class="btn btn--ghost" href="#services">View Services &amp; Pricing</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>4.8</strong><span>Google rating</span></li>
+            <li><strong>1500+</strong><span>Color sessions completed</span></li>
+            <li><strong>3</strong><span>Bridal parties each weekend</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual reveal delay-120">
+          <div class="hero__frame hero__frame--main">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A stylist finishing a sleek hair look" loading="lazy" width="900" height="1100">
+          </div>
+          <div class="hero__frame hero__frame--side">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Woman with styled editorial makeup and hair" loading="lazy" width="600" height="760">
+          </div>
+          <div class="hero__note hero__note--top">Weekend bridal slots open</div>
+          <div class="hero__note hero__note--bottom">Color correction by consultation only</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Salon highlights">
+      <ul class="marquee__list">
+        <li>Luxury blowouts</li>
+        <li>Precision cuts</li>
+        <li>Corrective color</li>
+        <li>Bridal artistry</li>
+        <li>Gel nails</li>
+        <li>Clean girl styling</li>
+        <li>Keratin rituals</li>
+      </ul>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__intro reveal">
+          <p class="eyebrow">Signature menu</p>
+          <h2>Services that photograph well and grow out even better.</h2>
+          <p>Fast scanable categories on mobile, with transparent starting prices and no bloated menu wall.</p>
+        </div>
+        <div class="service-tabs reveal">
+          <div class="service-tabs__controls" role="tablist" aria-label="Salon service categories">
+            <button class="service-tab is-active" type="button" role="tab" aria-selected="true" data-panel="hair">Hair</button>
+            <button class="service-tab" type="button" role="tab" aria-selected="false" data-panel="color">Color</button>
+            <button class="service-tab" type="button" role="tab" aria-selected="false" data-panel="bridal">Bridal</button>
+            <button class="service-tab" type="button" role="tab" aria-selected="false" data-panel="nails">Nails</button>
+          </div>
+
+          <div class="service-panel is-active" id="panel-hair" role="tabpanel">
+            <div class="service-grid">
+              <article class="service-card"><h3>Precision haircut</h3><p>Consultation, wash, shape, styling finish.</p><span>From Rs.1,400</span></article>
+              <article class="service-card"><h3>Editorial blowout</h3><p>Big movement, polished finish, humidity-aware styling.</p><span>From Rs.1,100</span></article>
+              <article class="service-card"><h3>Keratin ritual</h3><p>Smoothing treatment with aftercare plan and timing guidance.</p><span>From Rs.6,500</span></article>
+            </div>
+          </div>
+
+          <div class="service-panel" id="panel-color" role="tabpanel">
+            <div class="service-grid">
+              <article class="service-card"><h3>Gloss &amp; tone refresh</h3><p>Brass correction, soft shine, in-between maintenance.</p><span>From Rs.2,300</span></article>
+              <article class="service-card"><h3>Balayage session</h3><p>Face framing to full dimensional color placement.</p><span>From Rs.5,800</span></article>
+              <article class="service-card"><h3>Color correction</h3><p>Consult-led recovery work for banding, patching, and uneven lift.</p><span>Quote after consult</span></article>
+            </div>
+          </div>
+
+          <div class="service-panel" id="panel-bridal" role="tabpanel">
+            <div class="service-grid">
+              <article class="service-card"><h3>Engagement glam</h3><p>Hair, makeup, lashes, and dupatta or veil setting.</p><span>From Rs.8,500</span></article>
+              <article class="service-card"><h3>Wedding day signature</h3><p>Skin prep, trial alignment, draping, and look timeline support.</p><span>From Rs.18,000</span></article>
+              <article class="service-card"><h3>Bridesmaid styling</h3><p>Coordinated soft glam for intimate or large-format events.</p><span>From Rs.4,500</span></article>
+            </div>
+          </div>
+
+          <div class="service-panel" id="panel-nails" role="tabpanel">
+            <div class="service-grid">
+              <article class="service-card"><h3>Gel manicure</h3><p>Cuticle cleanup, shape, high-gloss gel finish.</p><span>From Rs.1,200</span></article>
+              <article class="service-card"><h3>Structured extensions</h3><p>Length, form, and finish with wearable strengthening.</p><span>From Rs.2,600</span></article>
+              <article class="service-card"><h3>Minimal nail art</h3><p>French variations, pearl accents, clean bridal detailing.</p><span>From Rs.1,600</span></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contrast" id="artists">
+      <div class="container artists">
+        <div class="section__intro reveal">
+          <p class="eyebrow">The artists</p>
+          <h2>Specialists clients ask for by name.</h2>
+        </div>
+        <div class="artist-grid">
+          <article class="artist-card reveal">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=720&amp;q=80" alt="Lead stylist Rhea Kapoor" loading="lazy" width="720" height="900">
+            <div>
+              <span>Hair direction</span>
+              <h3>Rhea Kapoor</h3>
+              <p>Known for low-maintenance luxe cuts, polished blowouts, and face-shaping consultation work.</p>
+            </div>
+          </article>
+          <article class="artist-card reveal delay-80">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=720&amp;q=80" alt="Color artist Sana Mirza" loading="lazy" width="720" height="900">
+            <div>
+              <span>Color specialist</span>
+              <h3>Sana Mirza</h3>
+              <p>Balayage, rich brunettes, and difficult correction work handled with strand-health first planning.</p>
+            </div>
+          </article>
+          <article class="artist-card reveal delay-120">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=720&amp;q=80" alt="Bridal artist Myra Sen" loading="lazy" width="720" height="900">
+            <div>
+              <span>Bridal beauty</span>
+              <h3>Myra Sen</h3>
+              <p>Soft glam, long-wear bridal skin prep, and event-ready styling that survives photos and heat.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container result-shell">
+        <div class="section__intro reveal">
+          <p class="eyebrow">Transformation view</p>
+          <h2>Slide between before and after.</h2>
+          <p>This section sells the result faster than paragraphs ever could.</p>
+        </div>
+        <div class="comparison reveal" id="comparison">
+          <img class="comparison__image comparison__image--before" src="https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Before salon transformation" loading="lazy" width="1400" height="900">
+          <div class="comparison__after-wrap">
+            <img class="comparison__image comparison__image--after" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="After salon transformation" loading="lazy" width="1400" height="900">
+          </div>
+          <div class="comparison__labels">
+            <span>Before</span>
+            <span>After</span>
+          </div>
+          <div class="comparison__divider" aria-hidden="true"></div>
+          <label class="comparison__range-label" for="comparisonRange">Adjust transformation comparison</label>
+          <input id="comparisonRange" class="comparison__range" type="range" min="0" max="100" value="50">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="packages">
+      <div class="container">
+        <div class="section__intro reveal">
+          <p class="eyebrow">Packages</p>
+          <h2>High-conversion bundles for the most-booked asks.</h2>
+        </div>
+        <div class="package-grid">
+          <article class="package-card reveal">
+            <span class="package-card__tag">Most booked</span>
+            <h3>Signature refresh</h3>
+            <p>Precision haircut, gloss treatment, and editorial blowout.</p>
+            <strong>Rs.3,800</strong>
+          </article>
+          <article class="package-card reveal delay-80">
+            <span class="package-card__tag">Event ready</span>
+            <h3>Occasion face frame</h3>
+            <p>Hair styling, soft glam makeup, lashes, and touch-up kit.</p>
+            <strong>Rs.6,500</strong>
+          </article>
+          <article class="package-card reveal delay-120">
+            <span class="package-card__tag">Bridal consult</span>
+            <h3>Wedding preview session</h3>
+            <p>Trial look, skin prep plan, styling references, and event schedule.</p>
+            <strong>Rs.4,000</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews">
+      <div class="container reviews__grid">
+        <div class="reviews__feature reveal">
+          <p class="eyebrow">Social proof</p>
+          <h2>Clients come in with references and leave with their own.</h2>
+          <p>Transparent pricing, clean execution, and photos that keep the referrals coming.</p>
+        </div>
+        <blockquote class="review-card reveal delay-80">
+          <p>"Booked for a color correction and finally got a brunette that looked expensive instead of orange. The consultation was honest and the result lasted."</p>
+          <footer><strong>Ishita R.</strong><span>Color client</span></footer>
+        </blockquote>
+        <blockquote class="review-card reveal delay-120">
+          <p>"My bridal trial felt more structured than most vendor meetings. They understood photos, outfit tones, and exactly how long the look had to last."</p>
+          <footer><strong>Neha S.</strong><span>Bridal booking</span></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section booking" id="book">
+      <div class="container booking__grid reveal">
+        <div class="booking__copy">
+          <p class="eyebrow">Book your slot</p>
+          <h2>Tell the salon what you want before you arrive.</h2>
+          <p>Weekend and bridal bookings fill first, so the form is intentionally short and WhatsApp continues the conversation.</p>
+          <ul>
+            <li>Hair, color, bridal, and nail bookings</li>
+            <li>Opening hours: 10 AM to 8:30 PM, Tuesday to Sunday</li>
+            <li>Parking available behind the studio lane</li>
+          </ul>
+        </div>
+        <form class="booking-form" id="bookingForm" novalidate>
+          <label>
+            Full name
+            <input type="text" id="clientName" name="name" placeholder="e.g. Ananya Shah" autocomplete="name" required>
+          </label>
+          <label>
+            Mobile number
+            <input type="tel" id="clientPhone" name="phone" placeholder="e.g. 98765 43210" autocomplete="tel" inputmode="tel" required>
+          </label>
+          <label>
+            Service category
+            <select id="clientService" name="service" required>
+              <option value="">Choose one</option>
+              <option>Hair</option>
+              <option>Color</option>
+              <option>Bridal</option>
+              <option>Nails</option>
+            </select>
+          </label>
+          <label>
+            Preferred date
+            <input type="date" id="clientDate" name="date" required>
+          </label>
+          <label>
+            Notes or inspiration
+            <textarea id="clientNotes" name="notes" rows="4" placeholder="Share the occasion, look, or service you have in mind."></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Continue on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-actions" aria-label="Quick salon actions">
+    <a href="https://wa.me/918668582490?text=Hi%20Velvet%20Frame,%20I%20want%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a>
+    <a href="tel:+918668582490">Call</a>
+    <a href="#book">Book</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
