@@ -908,6 +908,17 @@ button {
     padding-top: 24px;
   }
 
+  .hero h1 {
+    font-size: clamp(2.35rem, 10vw, 3.5rem);
+    max-width: 6.6ch;
+    line-height: 0.92;
+  }
+
+  .hero__lede {
+    max-width: 26rem;
+    font-size: 0.98rem;
+  }
+
   .hero__actions {
     display: grid;
     grid-template-columns: 1fr;
