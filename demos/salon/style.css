@@ -608,7 +608,7 @@ button {
 .comparison__after-wrap {
   position: absolute;
   inset: 0;
-  width: var(--split);
+  clip-path: inset(0 0 0 var(--split));
   overflow: hidden;
 }
 
